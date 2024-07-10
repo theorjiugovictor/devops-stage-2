@@ -7,8 +7,12 @@ from app.api.main import api_router
 from app.core.config import settings
 
 
-def custom_generate_unique_id(route: APIRoute) -> str:
-    return f"{route.tags[0]}-{route.name}"
+def custom_generate_unique_id(route: APIRoute):
+    if route.tags:
+        return f"{route.tags[0]}-{route.name}"
+    else:
+        return route.name
+
 
 
 if settings.SENTRY_DSN and settings.ENVIRONMENT != "local":
@@ -31,5 +35,9 @@ if settings.BACKEND_CORS_ORIGINS:
         allow_methods=["*"],
         allow_headers=["*"],
     )
+
+@app.get("/")
+def read_root():
+    return {"message": "Welcome to the FastAPI application"}
 
 app.include_router(api_router, prefix=settings.API_V1_STR)

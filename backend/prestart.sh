@@ -1,5 +1,8 @@
 #! /usr/bin/env bash
 
+# prestart.sh
+echo "Starting database setup..."
+
 # Let the DB start
 python ./app/backend_pre_start.py
 

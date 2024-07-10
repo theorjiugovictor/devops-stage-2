@@ -12,7 +12,7 @@ This directory contains the frontend of the application built with ReactJS and C
 1. **Navigate to the frontend directory**:
     ```sh
     cd frontend
-    ```
+
 
 2. **Install dependencies**:
     ```sh
