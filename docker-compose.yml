@@ -1,4 +1,4 @@
-version: '3.8'
+version: '3.x'
 
 services:
   backend:
@@ -42,6 +42,14 @@ services:
     volumes:
       - ./data:/data
       - ./letsencrypt:/etc/letsencrypt
+
+  frontend:
+    build: ./frontend
+    container_name: frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - VITE_API_URL=http://localhost:8000
 
 volumes:
   postgres_data:
