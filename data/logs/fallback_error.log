@@ -4,3 +4,9 @@
 2024/07/11 23:29:58 [warn] 183#183: 512 worker_connections are not enough, reusing connections
 2024/07/11 23:29:58 [alert] 183#183: 512 worker_connections are not enough
 2024/07/11 23:29:58 [error] 183#183: *882 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 127.0.0.1, server: localhost-nginx-proxy-manager, request: "GET /favicon.ico HTTP/1.1", upstream: "http://127.0.0.1:80/favicon.ico", host: "localhost", referrer: "http://localhost/"
+2024/07/13 19:17:39 [warn] 171#171: 512 worker_connections are not enough, reusing connections
+2024/07/13 19:17:39 [alert] 171#171: 512 worker_connections are not enough
+2024/07/13 19:17:39 [error] 170#170: *770 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 127.0.0.1, server: localhost-nginx-proxy-manager, request: "GET /favicon.ico HTTP/1.1", upstream: "http://127.0.0.1:80/favicon.ico", host: "localhost", referrer: "http://localhost/"
+2024/07/13 19:17:51 [error] 171#171: *772 open() "/var/www/html/api" failed (2: No such file or directory), client: 172.18.0.1, server: localhost-nginx-proxy-manager, request: "GET /api HTTP/1.1", host: "localhost"
+2024/07/13 19:19:18 [error] 171#171: *775 open() "/var/www/html/api" failed (2: No such file or directory), client: 172.18.0.1, server: localhost-nginx-proxy-manager, request: "GET /api HTTP/1.1", host: "localhost"
+2024/07/13 19:25:54 [error] 171#171: *777 open() "/var/www/html/api" failed (2: No such file or directory), client: 172.18.0.1, server: localhost-nginx-proxy-manager, request: "GET /api HTTP/1.1", host: "localhost"
