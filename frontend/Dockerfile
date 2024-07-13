@@ -1,18 +1,17 @@
-# Use an official Node.js runtime as a parent image
-FROM node:14
+# Use the latest official Node.js image as a base
+FROM node:latest
 
 # Set the working directory
 WORKDIR /app
 
-# Copy package.json and install dependencies
-COPY package.json ./
-RUN npm install
-
-# Copy the rest of the application code
+# Copy the application files
 COPY . .
 
-# Build the application
-RUN npm run build
+# Install dependencies
+RUN npm install
 
-# Serve the application
-CMD ["npm", "start"]
+# Expose the port the development server runs on
+EXPOSE 5173
+
+# Run the development server
+CMD ["npm", "run", "dev", "--", "--host"]
