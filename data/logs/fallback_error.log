@@ -10,3 +10,12 @@
 2024/07/13 19:17:51 [error] 171#171: *772 open() "/var/www/html/api" failed (2: No such file or directory), client: 172.18.0.1, server: localhost-nginx-proxy-manager, request: "GET /api HTTP/1.1", host: "localhost"
 2024/07/13 19:19:18 [error] 171#171: *775 open() "/var/www/html/api" failed (2: No such file or directory), client: 172.18.0.1, server: localhost-nginx-proxy-manager, request: "GET /api HTTP/1.1", host: "localhost"
 2024/07/13 19:25:54 [error] 171#171: *777 open() "/var/www/html/api" failed (2: No such file or directory), client: 172.18.0.1, server: localhost-nginx-proxy-manager, request: "GET /api HTTP/1.1", host: "localhost"
+2024/07/13 21:30:46 [error] 223#223: *1417 open() "/var/www/html/api/docs" failed (2: No such file or directory), client: 172.18.0.1, server: localhost-nginx-proxy-manager, request: "GET /api/docs HTTP/1.1", host: "localhost"
+2024/07/13 21:30:47 [warn] 223#223: 512 worker_connections are not enough, reusing connections
+2024/07/13 21:30:47 [alert] 223#223: 512 worker_connections are not enough
+2024/07/13 21:30:47 [error] 224#224: *2366 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 127.0.0.1, server: localhost-nginx-proxy-manager, request: "GET /favicon.ico HTTP/1.1", upstream: "http://127.0.0.1:80/favicon.ico", host: "localhost", referrer: "http://localhost/api/docs"
+2024/07/13 21:30:58 [error] 223#223: *2368 open() "/var/www/html/api/redoc" failed (2: No such file or directory), client: 172.18.0.1, server: localhost-nginx-proxy-manager, request: "GET /api/redoc HTTP/1.1", host: "localhost"
+2024/07/13 21:31:05 [error] 223#223: *2368 open() "/var/www/html/api" failed (2: No such file or directory), client: 172.18.0.1, server: localhost-nginx-proxy-manager, request: "GET /api HTTP/1.1", host: "localhost"
+2024/07/13 21:40:55 [error] 223#223: *2484 open() "/var/www/html/api/docs" failed (2: No such file or directory), client: 172.18.0.1, server: localhost-nginx-proxy-manager, request: "GET /api/docs HTTP/1.1", host: "localhost"
+2024/07/13 21:40:57 [error] 223#223: *2486 open() "/var/www/html/api/redoc" failed (2: No such file or directory), client: 172.18.0.1, server: localhost-nginx-proxy-manager, request: "GET /api/redoc HTTP/1.1", host: "localhost"
+2024/07/13 21:40:58 [error] 223#223: *2486 open() "/var/www/html/api" failed (2: No such file or directory), client: 172.18.0.1, server: localhost-nginx-proxy-manager, request: "GET /api HTTP/1.1", host: "localhost"
